@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0e153a;
+  text-align: center;
+}
+
+nav {
+  background-color: white;
+  text-align: right;
+  box-shadow: 2px 2px 10px rgb(196, 196, 238);
+  margin: 0px;
+  padding-bottom: 0.75cm;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+ul {
+  padding-top: 0.75cm;
+  list-style-type:none;
+  overflow: hidden;
+  padding-right: 0.7cm;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 1em;
+  color: black;
+}
+
+li a:hover {
+  font-weight: bold;
+  color: navy;
+}
+
+#logo {
+  width: 40%;
+  font-size: 24px;
+  color: white;
+}
+
+img {
+  margin-top: 0.6cm;
+}
+
+footer {
+  background-color: white;
+  text-align:center;
+  box-shadow: 2px 2px 10px rgb(196, 196, 238);
+  width: 100%;
+  padding-top: 0.4cm;
+  padding-bottom: 0.4cm;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+.contact-us{
+  margin-top: 50px;
+  width: 75%;
+  background: #fff;
+  padding: 50px;
+  margin: 100px auto;
+  border-radius: 30px;
+  position: relative;
+}
+
+.title h1{
+  color: #535274;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form,
+.form-items{
+  width: 100%;
+}
+
+.form-items .input{
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  background: #ebeef1;
+  border: 0px;
+  outline: none;
+  border-radius: 30px;
+}
+
+.form-items .input.message{
+  height: 125px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  resize: none;
+  
+}
+
+.btn{
+  background: #0e153a;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  padding: 15px;
+  width: 400px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn .fas{
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.btn:hover{
+  background-color: RGB(46,11,255)
+}
+
+.form-items{
+  position: relative;
+}
+
+.form-items .fas{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #9a99aa;
+}
+
+
+
+
