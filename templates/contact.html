@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>MyMedical</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <link rel="stylesheet" href="../static/contact.css" />
+    
+	  <script src="../static/script.js" defer></script>
+
+  </head>
+  <body>
+
+ <nav>
+     <img src="static/img/logo.png" width= 200px; style = "float: left"/>
+     <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/appointments">Appointments</a></li>
+        <li><a href="/reminders">Reminders</a></li>
+        <li><a href="/diagnosis">Diagnosis</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+     </ul>
+   </nav>
+   
+   <div class="contact-us">
+     <div class="title">
+       <h1>Contact Us!</h1>
+     </div>
+
+     <form id="contact-us" method="post" action="/contact">
+      <div class="form">
+        <div class="form-items">
+      
+          <input type="text" class="input" placeholder="Name" id = "Name" required/>
+          <i class="fas fa-user"></i>
+
+          <input type="text" class="input" placeholder="Email" id = "Email" required/>
+          <i class="fas fa-envelope"></i>
+       
+         <textarea class="input message" cols="30" rows="10" placeholder="Message..." id = "Message"/></textarea>
+       </div>
+     
+  <button class="btn" onclick="submitForm();">Submit</button>
+     
+    
+    </div>
+    </div>
+  </form>
+     
+   <footer>
+     <p>
+       © MyMedical 
+      </p>
+   </footer>
+  </body>
+</html>
+
+

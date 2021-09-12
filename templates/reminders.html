@@ -1,0 +1,46 @@
+<html>
+ <head>
+   <title>MyMedical</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <link rel="stylesheet" href="../static/appointments.css" />
+    
+	  <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+ 
+    <nav>
+     <img src="static/img/logo.png" width= 200px; style = "float: left"/>
+     <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/appointments">Appointments</a></li>
+        <li><a href="/reminders">Reminders</a></li>
+        <li><a href="/diagnosis">Diagnosis</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+     </ul>
+   </nav>
+
+   
+     <h12>Reminders</h12><br>
+     <h13>You have appointments with:</h13><br>
+     <div class= "reminders"</div>
+      <h8>Reminders</h8><br>
+      <h9>You have appointments with:</h9><br><br>
+      {% if reminders %}
+        {% for i in reminders %}
+          <h10>{{ i[0] }}:</h10>
+          <h11> @ {{ i[1] }}</h11> <br>
+        {% endfor %}
+      {% else %}
+      <h7>You currently have no reminders!!!</h7>
+      {% endif %}
+    
+ </body>
+<html>

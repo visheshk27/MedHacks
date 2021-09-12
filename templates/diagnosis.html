@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../static/diagnosis.css">
+	<link rel="shortcut icon" href="https://media.discordapp.net/attachments/522247603929219074/782661792874496010/Team_Solexa.png"
+	 type="image/x-icon">
+   <script src="../static/script.js" defer></script>
+	<title>My Medical Assistance</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="sidebar">
+			<h2>My Medical</h2>
+
+		<nav>
+     <img src="static/img/logo.png" width= 200px; style = "float: left"/>
+     <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/appointments">Appointments</a></li>
+        <li><a href="/reminders">Reminders</a></li>
+        <li><a href="/diagnosis">Diagnosis</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+     </ul>
+   </nav>
+            <button id="signout">Sign Out</button>
+                <style>
+
+			.forms-in {
+				width: 100%;
+				margin: 0 auto;
+				color: #2E6FFF;
+				padding: 15 px 0;
+			}
+
+			.forms-in div {
+				padding: 30px 20px;
+				max-width: 350px;
+				margin: 0 auto;
+				background: #f3f5f9;
+				border-radius: 5px;
+				margin-bottom: 15px;
+			}
+
+			.forms-in h3 {
+				text-align: center;
+				font-size: 15px;
+			}
+
+			.forms-in input {
+				border: 0;
+				width: 100%;
+				margin-bottom: 15px;
+				padding: 5px;
+				box-sizing: border-box;
+				border-radius: 3px;
+			}
+
+			.forms-in button {
+				border: none;
+				padding: 7px 20px;
+				background: #2E6FFF;
+				color: white;
+				border-radius: 4px;
+				cursor: pointer;
+				font-weight: bold;
+			}
+
+
+			.forms-in button:hover {
+				opacity: 0.7;
+			}
+
+			.hide {
+				display: none;
+			}
+
+			#forgot-password {
+				text-align: center;
+				font-size: 13px;
+				cursor: pointer;
+			}
+
+			#forgot-password:hover {
+				opacity: 0.7;
+			}
+		</style>
+        </ul>
+    </div>
+    <div class="main_content">
+
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/diagnosis" method="POST">
+        <br/>
+        <p>By filling this form, our doctors can better diagnose your illness. They will get back to you as soon as they can!</p>
+        <br/>
+        <div class="colums">
+          <div class="item">
+            <label for="name">Name<span>*</span></label>
+            <input id="Name" type="text" name="name" required/>
+          </div>
+          <div class="item">
+            <label for="eaddress">Email Address<span>*</span></label>
+            <input id="Email" type="text"   name="eaddress" required/>
+          </div>
+        </div>
+        <div class="question">
+          <label>Have you been experiencing these symptoms for more than a week?</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_1" name="time" required/>
+              <label for="radio_1" class="radio"><span>Yes</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_2" name="time" />
+              <label for="radio_2" class="radio"><span>No</span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <label>Are you over the age of 60?</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_3" name="age" />
+              <label for="radio_3" class="radio"><span>Yes</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_4" name="age" required/>
+              <label for="radio_4" class="radio"><span>No</span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <label>Do you have any other underlying conditions (cardiovascular disease, diabetes, chronic respiratory diseases etc)?</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_5" name="condition" />
+              <label for="radio_5" class="radio"><span>Yes</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_6" name="condition" required/>
+              <label for="radio_6" class="radio"><span>No</span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <label>Do you consistently exercise and maintain a healthy diet?</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="none" id="radio_7" name="habit" required/>
+              <label for="radio_7" class="radio"><span>Yes</span></label>
+            </div>
+            <div>
+              <input  type="radio" value="none" id="radio_8" name="habit" required/>
+              <label for="radio_8" class="radio"><span>No</span></label>
+            </div>
+          </div>
+        </div>
+
+                    <div class="item">
+          <label for="visit">Is there anything else you would like to let us know?</label>
+          <textarea id="visit" rows="3"></textarea>
+        </div>
+          </div>
+        </div>
+        <div class="btn-block">
+          
+          <button onclick="submitForm();">Submit</button>
+        </div>
+      </form>
+  <footer>
+     <p>
+       © MyMedical 
+      </p>
+   </footer>
+</body>
+</html>
+
+   

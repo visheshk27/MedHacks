@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+   <title>MyMedical</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <link rel="stylesheet" href="../static/appointments.css" />
+    
+	  <script src="/script.js" defer></script>
+  </head>
+  <body>
+ 
+    <script src="script.js"></script>
+    <td id="logo">MyMedical</td>
+   <nav>
+     <img src="static/img/logo.png" width= 200px; style = "float: left"/>
+     <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/appointments">Appointments</a></li>
+        <li><a href="/reminders">Reminders</a></li>
+        <li><a href="/diagnosis">Diagnosis</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+     </ul>
+   </nav>
+
+   <div class= "doctorcontact">
+     <div class= "drsmithimg"><img src="static/img/drsmith.jpeg" width= 30%; style = "float: left"/div>
+     <div class= "drdescription">
+       <h4 class= "drtitle">Dr. Smith</h4>
+       <h6 class= "drspecialties">Specialties:</h6>
+       <p class="drexpertises2">Foot and Ankle Orthopedic Surgery and Orthopedic Surgery</p>
+       <form action="/appointments" method = "POST">
+        <label for="appointmenttime">Appointment date and time:</label>
+        <input type="datetime-local" id="appointmenttime" name="appointmenttime" required/>
+        <input id="docId" name="doctorName" type="hidden" value="Dr. Smith">
+      <button>Make An Appointment</button>
+      </form>
+      
+      </div>
+      </div>
+    </div>
+
+    <div class= "doctorcontact">
+     <div class= "drmartinezimg"><img src="static/img/drmartinez.jpeg" width= 30%; style = "float: left"/div>
+     <div class= "drdescription">
+       <h4 class= "drtitle">Dr. Martinez</h4>
+       <h6 class= "drspecialties">Specialties:</h6>
+       <p class="drexpertises2">Family Medicine and Sports Medicine</p>
+       <form action="/appointments" method = "POST">
+        <label for="appointmenttime">Appointment date and time:</label>
+        <input type="datetime-local" id="appointmenttime" name="appointmenttime" required/>
+        <input id="docId" name="doctorName" type="hidden" value="Dr. Martinez">
+      <button>Make An Appointment</button>
+      </form>
+       
+      </div>
+      </div>
+    </div>
+
+    <div class= "doctorcontact">
+     <div class= "drmartinezimg"><img src="static/img/drgarcia.jpeg" width= 30%; style = "float: left"/div>
+     <div class= "drdescription">
+       <h4 class= "drtitle">Dr. Garcia</h4>
+       <h6 class= "drspecialties">Specialties:</h6>
+       <p class="drexpertises2">Obstetrics and Gynecology</p>
+       <form action="/appointments" method = "POST">
+        <label for="appointmenttime">Appointment date and time:</label>
+        <input type="datetime-local" id="appointmenttime" name="appointmenttime" required/>
+        <input id="docId" name="doctorName" type="hidden" value="Dr. Garcia">
+        <button>Make An Appointment</button>
+      </form>
+       
+      </div>
+      </div>
+    </div>
+
+        
+   <footer>
+     <p>
+       © MyMedical 
+    </p>
+   </footer>
+  </body>
+</html>
+
+  
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+   <title>MyMedical Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+   <link href="style.css" rel="stylesheet" <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <link rel="stylesheet" href="../static/style.css" />
+    
+	  <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+ 
+    <script src="script.js"></script>
+    <td id="logo">MyMedical</td>
+  <nav>
+     <img src="static/img/logo.png" width= 200px; style = "float: left"/>
+     <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/appointments">Appointments</a></li>
+        <li><a href="/reminders">Reminders</a></li>
+        <li><a href="/diagnosis">Diagnosis</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+     </ul>
+   </nav>
+
+   <style>
+      .forms-out {
+				margin: 0 auto;
+				font-family: "Montserrat", sans-serif;
+				padding: 15px 0;
+			} 
+
+			.forms-in {
+				width: 100%;
+				margin: 0 auto;
+				color: #2E6FFF;
+				padding: 15 px 0;
+        margin-top: 250px;
+			}
+
+			.forms-in div {
+				padding: 30px 20px;
+				max-width: 350px;
+				margin: 0 auto;
+				background: #c5e3f6;
+				border-radius: 5px;
+				margin-bottom: 15px;
+			}
+
+			.forms-in h3 {
+				text-align: center;
+				font-size: 15px;
+			}
+
+			.forms-in input {
+				border: 0;
+				width: 100%;
+				margin-bottom: 15px;
+				padding: 5px;
+				box-sizing: border-box;
+				border-radius: 3px;
+			}
+
+			.forms-in button {
+				border: none;
+				padding: 7px 20px;
+				background: #2E6FFF;
+				color: white;
+				border-radius: 4px;
+				cursor: pointer;
+				font-weight: bold;
+			}
+
+			.forms-in button:hover {
+				opacity: 0.7;
+			}
+			.hide {
+				display: none;
+			}
+			#forgot-password {
+				text-align: center;
+				font-size: 13px;
+				cursor: pointer;
+			}
+			#forgot-password:hover {
+				opacity: 0.7;
+			}
+		</style>
+    
+    <div class="forms-out">
+			<div class="forms-in">
+				<div id="registration-page" class="hide">
+					<button id="show-login">Sign In</button>
+          <h3>Sign Up</h3>
+          Email <br />
+          <input type="email" id="registration-email" /><br />
+          Confirm Email <br />
+          <input
+            type="email"
+            id="registration-reemail"
+            autocomplete="disable"
+          /><br />
+          Password <br />
+          <input type="password" id="registration-password" /><br />
+
+        </div>
+      <div id="login-page">
+         <h1>Log In</h1>
+        <form method="post" action='/login'>
+            <label>Enter your email address:</label><br />
+            <input name='account' id="account" required />
+            <label>Enter your password:</label><br />
+            <input name='password' id="password" required />
+            <p id="forgot-password">Forgot Password</p>
+            <button type="submit">Login</button>
+        </form>
+      </div>
+
+			</div>
+    </div>
+
+    <div id="homepage" class="hide">
+
+	  <div class="wrapper">
+
+		<div class="sidebar">
+			<h2>My Medical</h2>
+			</body>
+    </div>
+  </body>
+</html>
